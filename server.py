@@ -1,3 +1,9 @@
+import eventlet
+eventlet.monkey_patch()
+
+# Buradan sonra senin mevcut kodların devam edecek:
+# from flask import Flask...
+# from flask_socketio import SocketIO...
 from flask import Flask, request
 from flask_socketio import SocketIO, emit, join_room, leave_room
 
